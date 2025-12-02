@@ -47,6 +47,7 @@ function draw() {
         FakeButtonArray[i].show()
         mdistance = dist(mouseX, mouseY, FakeButtonArray[i].positionx,FakeButtonArray[i].positiony )
 
+
         if (mdistance < 25){
             FakeButtonArray[i].fill = 255;
         }
@@ -54,7 +55,7 @@ function draw() {
             FakeButtonArray[i].fill = 0
         }
 
-
+        FakeButtonArray[i].size = constrain(mdistance,50,100)
     }
 }
 function mousePressed(){
@@ -68,6 +69,7 @@ class FakeButton{
         this.positiony = windowWidth/2
         this.fill = 255
         this.index = name
+        this.size = 50
     }
     click(){
         this.mdistance = dist(mouseX, mouseY, this.positionx, this.positiony)
@@ -80,6 +82,6 @@ class FakeButton{
     }
     show(){
         fill(this.fill)
-        circle(this.positionx, this.positiony, 50)
+        circle(this.positionx, this.positiony, this.size)
     }
 }
