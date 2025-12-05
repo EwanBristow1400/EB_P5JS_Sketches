@@ -44,10 +44,7 @@ class randomBlock{
         this.x = round(random(0, windowWidth) / 30) * 30
         this.y = round(random(0, windowHeight) / 30) * 30
         this.col = BlockColour
-
-
     }
-
     show(){
         fill(this.col)
         rect(this.x, this.y, 30)

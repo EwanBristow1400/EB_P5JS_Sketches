@@ -22,7 +22,8 @@ const sketches =
         { name: "Tree Generation", path: "Tree_Generation/index.html" },
         { name: "UMAP Tests", path: "UMAP_TESTS/index.html" },
         { name: "Website Fetch", path: "Website_Fetch/index.html" },
-        { name: "Weird Envelope Tests", path: "WeirdEnvelopeTests/index.html" }
+        { name: "Weird Envelope Tests", path: "WeirdEnvelopeTests/index.html" },
+        { name: "ohLabsCreation", path: "ohLabsCreation/index.html" }
 ];
 
 let FakeButtonArray = []
